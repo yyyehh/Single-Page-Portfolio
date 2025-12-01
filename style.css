@@ -14,14 +14,19 @@
 
 /* Light theme overrides (toggle by setting data-theme="light" on <html>) */
 html[data-theme="light"]{
-  --bg: #f6f8fb;
-  --card: #ffffff;
-  --muted: #5b6170;
+  --bg: #ffffff;
+  --card: #f9fafb;
+  --muted: #374151;
   --accent: #0ea5a4;
   --accent-2: #2563eb;
-  --glass: rgba(0,0,0,0.02);
-  --glass-2: rgba(0,0,0,0.04);
+  --glass: rgba(0,0,0,0.03);
+  --glass-2: rgba(0,0,0,0.05);
   color-scheme: light;
+}
+
+html[data-theme="light"] body{
+  background: #ffffff;
+  color: #111827;
 }
 *{box-sizing:border-box}
 html,body{height:100%}

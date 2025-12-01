@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人簡歷</title>
+  <meta name="description" content="個人簡歷一頁式網站範例，包含個人資訊、技能、工作時間軸、專案與聯絡方式。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><rect rx='8' width='100%' height='100%' fill='%230f172a'/><text x='50%' y='55%' font-family='Inter' font-size='18' font-weight='700' fill='white' text-anchor='middle' alignment-baseline='middle'>JS</text></svg>" alt="logo" class="logo">
+        <div>
+          <h1 class="name">葉宥妤</h1>
+          <p class="title">學生</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">關於我</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#timeline">經歷</a></li>
+          <li><a href="#projects">專案</a></li>
+          <li><a href="#contact">聯絡</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-label="開啟選單">☰</button>
+      <button class="theme-toggle" aria-label="切換主題">🌙</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="hero">
+      <div class="hero-left">
+        <h2>嗨！我是 <span>葉宥妤</span></h2>
+        <p class="lead">目前為就讀輔仁大學醫學資訊與創新應用學士學位學程一年級的學生。</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">查看作品</a>
+          <a class="button alt" href="#contact">聯絡我</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="https://via.placeholder.com/160" alt="profile photo" class="profile-photo">
+          <dl>
+            <div>
+              <dt>位置</dt><dd>NewTaipei, Taiwan</dd>
+            </div>
+            <div>
+              <dt>Email</dt><dd><a href="mailto:yeyou1515@gmail.com">yeyou1515@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>職位</dt><dd>學生</dd>
+            </div>
+            <div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container reveal">
+      <h3>關於我</h3>
+      <p>現在正在學習java以及學習如何使用GitHub。</p>
+    </section>
+
+    <section id="skills" class="skills container reveal">
+      <h3>技能</h3>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>溝通</h4>
+          <ul>
+            <li>冷靜分析</li>
+            <li>找出問題並提供方法解決</li>
+            <li>善於觀察</li>
+          </ul>
+        </div>
+
+        <div class="skill">
+          <h4>語言能力</h4>
+          <ul>
+            <li>中文（母語）</li>
+            <li>英文（中等）</li>
+            <li>韓文（略懂）</li>
+          </ul>
+        </div>
+
+        <div class="skill progress">
+          <h4>能力指標</h4>
+          <div class="skill-bar" data-level="15">GitHub — 15%</div>
+          <div class="skill-bar" data-level="30">Java — 30%</div>
+          <div class="skill-bar" data-level="50">calculator — 50%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="timeline container reveal">
+      <h3>工作 / 學歷</h3>
+      <ul>
+        <li class="timeline-item">
+          <span class="timeline-year">2025/7 - 2025/8</span>
+          <div class="timeline-content">
+            <h4>乾杯集團－老乾杯夢時代店</h4>
+            <p>外場服務生，完成領班交代之工作。</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2022/9 - 2025/6</span>
+          <div class="timeline-content">
+            <h4>高雄市立前鎮高中 普通科三類</h4>
+            <p>自治幹部：第一中隊中隊長、旗手（順旗）。
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2019/6 - 2022/6</span>
+          <div class="timeline-content">
+            <h4>高雄市立瑞祥國中</h4>
+            <p>幹部：學藝股長，負責教學日誌及作業抽查。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="reveal">
+
+      <h3>專案作品</h3>
+      <div class="grid">
+										<div class="project card">
+												<a href="presentation-pdf.html?file=presentations/meide-jianshang.pdf" data-openviewer="true" data-openbehavior="tab" data-pdf="https://export-download.canva.com/BKLSY/DAGkUYBKLSY/126/0-7249029244686726102.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20251125%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251125T005857Z&X-Amz-Expires=31017&X-Amz-Signature=6b76e295f1d0fa07dfdf72a845d67985f31032103d3feb6b2de8a4073fb9691f&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%25E7%25BE%258E%25E7%259A%2584%25E9%2591%2591%25E8%25B3%259E304%252023%252038.pdf&response-expires=Tue%2C%2025%20Nov%202025%2009%3A35%3A54%20GMT" aria-label="檢視簡報：美的鑑賞" target="_blank" rel="noopener noreferrer">
+													<div class="thumb">
+														<img src="https://export-download.canva.com/BKLSY/DAGkUYBKLSY/126/0/0001-4390369381621858563.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20251125%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251125T020829Z&X-Amz-Expires=31226&X-Amz-Signature=aaf0fbfb08d9db8462498214364c0566c485441532aac9eb7f797c4a4141a467&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%25E7%25BE%258E%25E7%259A%2584%25E9%2591%2591%25E8%25B3%259E304%252023%252038.jpg&response-expires=Tue%2C%2025%20Nov%202025%2010%3A48%3A55%20GMT" alt="美的鑑賞 封面縮圖" onerror="this.style.display='none'">
+													</div>
+												</a>
+						<div class="fw-bold">美的鑑賞</div>
+						<div class="muted text-sm">對電影大氣之子進行分析與鑑賞。</div>
+						<div><a href="presentation-pdf.html?file=presentations/project-b.pdf" data-openviewer="true" data-openbehavior="tab" data-pdf="https://yyyehh.my.canva.site/" target="_blank" rel="noopener noreferrer">檢視專案</a></div>
+				</div>	
+										<div class="project card">
+												<a href="presentation-pdf.html?file=presentations/project-b.pdf" data-openviewer="true" data-openbehavior="tab" data-pdf="presentations/project-b.pdf" aria-label="檢視專案：專案名稱 B" target="_blank" rel="noopener noreferrer">
+													<div class="thumb">
+														<img src="https://export-download.canva.com/ZFdPE/DAFoYSZFdPE/63/0/0001-3943387119475435739.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20251124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251124T152257Z&X-Amz-Expires=72213&X-Amz-Signature=16b2eda1e0c439d7e6f838c0b0f70efce5dfd6eb7271237fa8651da3d2a84d5c&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%2711131%25E8%2591%2589%25E5%25AE%25A5%25E5%25A6%25A4%25E6%25A8%25A1%25E8%2580%2583%25EF%25BC%2586%25E5%25AD%25B8%25E6%25B8%25AC.jpg&response-expires=Tue%2C%2025%20Nov%202025%2011%3A26%3A30%20GMT" alt="模擬考及學測成績相關性調查 封面縮圖" onerror="this.style.display='none'">
+													</div>
+												</a>
+						<div class="fw-bold">模擬考及學測成績相關性調查</div>
+						<div class="muted text-sm">運用高中數學所學觀念，利用老師給的資料進行分析。</div>
+						<div><a href="presentation-pdf.html?file=presentations/project-b.pdf" data-openviewer="true" data-openbehavior="tab" data-pdf="https://yyyehh.my.canva.site/math" target="_blank" rel="noopener noreferrer">檢視專案</a></div>
+				</div>
+										<div class="project card">
+												<a href="presentation-pdf.html?file=presentations/project-c.pdf" data-openviewer="true" data-openbehavior="inline" data-pdf="presentations/project-c.pdf" aria-label="檢視專案：專案名稱 C" target="_blank" rel="noopener noreferrer">
+													<div class="thumb">
+														<img src="https://export-download.canva.com/W_syY/DAGjQlW_syY/83/0/0001-3847685628568244327.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20251124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251124T142028Z&X-Amz-Expires=74455&X-Amz-Signature=0f5997d002d80d5c2532eb3bffe02324e3728955c11567eba671141db535756e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%2730438%25E8%2591%2589%25E5%25AE%25A5%25E5%25A6%25A4%25E6%259C%25AA%25E4%25BE%2586%25E6%2583%25B3%25E5%2583%258F%25E4%25BD%259C%25E6%25A5%25AD.jpg&response-expires=Tue%2C%2025%20Nov%202025%2011%3A01%3A23%20GMT" alt="未來想像作業 封面縮圖" onerror="this.style.display='none'">
+													</div>
+												</a>
+						<div class="fw-bold">未來想像作業</div>
+						<div class="muted text-sm">填寫個人簡歷、大學就讀動機，以及讀書計畫。</div>
+						<div><a href="presentation-pdf.html?file=presentations/project-c.pdf" data-openviewer="true" data-openbehavior="tab" data-pdf="https://yyyehh.my.canva.site/30438" target="_blank" rel="noopener noreferrer">檢視專案</a></div>
+				</div>
+				</div>
+			</section>
+
+
+    <section id="contact" class="contact container reveal">
+      <h3>聯絡我</h3>
+      <p>想合作或邀請我演講？歡迎透過以下方式聯絡我。</p>
+      <form class="contact-form" action="#" onsubmit="return false;">
+        <label>姓名
+          <input type="text" name="name" placeholder="您的姓名" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="email@example.com" required>
+        </label>
+        <label>訊息
+          <textarea name="message" placeholder="寫下您的想法..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="button" type="submit">送出</button>
+          <button class="button alt" type="reset">重置</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 葉宥妤 — 學生</p>
+      <p>Built with JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- modal for projects -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="關閉">✕</button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -103,6 +103,11 @@ section h3{margin:0 0 1rem 0;font-size:1.3rem}
 .skill-tag{background:linear-gradient(135deg,var(--glass),var(--glass-2));padding:0.65rem 1rem;border-radius:8px;text-align:center;font-weight:600;color:var(--muted);border:1px solid rgba(255,255,255,0.06);transition:transform 280ms cubic-bezier(0.34,1.56,0.64,1),box-shadow 280ms ease,color 280ms ease;cursor:default;display:inline-block}
 .skill-tag:hover{transform:scale(1.12);box-shadow:0 8px 24px rgba(0,0,0,0.4);color:var(--accent);border-color:var(--accent)}
 
+.skill.progress{grid-column:1 / -1}
+.skill-bar{background:var(--glass-2);padding:0.75rem;border-radius:8px;margin-top:0.75rem;position:relative;overflow:hidden;font-weight:600;color:var(--muted)}
+.skill-bar::before{content:'';position:absolute;left:0;top:0;height:100%;width:var(--percent,0%);background:linear-gradient(90deg,var(--accent-2),var(--accent));border-radius:8px;transition:width 1200ms cubic-bezier(0.25,0.46,0.45,0.94);z-index:0;opacity:0.3}
+.skill-bar{position:relative;z-index:1}
+
 /* Timeline */
 .timeline ul{list-style:none;margin:0;padding:0}
 .timeline-item{position:relative;display:flex;gap:1rem;margin:1rem 0;padding-left:3rem}

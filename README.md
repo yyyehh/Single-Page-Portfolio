@@ -94,5 +94,9 @@
 
 ---
 
-若你想我把 A/B 的比較擴展成表格（包含優缺點、影響範圍、實作工時估計）或把 revert 的操作步驟寫成可執行的 shell 指令清單，我可以幫你整理並推到 repo。
+## 注意：GitHub Pages 圖片可用性
+
+- 現象：有時候剛推送靜態資產到 GitHub 後，Pages 會先出現 404，但原始檔案在 `raw.githubusercontent.com` 可以取得（HTTP 200）。這通常是 Pages 的部署或 CDN 傳播延遲造成的暫時狀態。
+- 本專案情況：我已檢查過 `assets/project1.jpg`、`assets/project2.jpg`、`assets/project3.jpg` 的狀態，Raw URL 回傳 200；在 2025-12-02 我重新檢查時，Pages 上的三張圖也已回復為 200（可正常顯示）。
+- 建議處理：若遇到類似 404，可先等待 2–5 分鐘再重試，並於瀏覽器用 `Ctrl+F5` 強制重新整理；若仍然 404，請至倉庫 Settings → Pages 檢查部署狀態或重新觸發一次推送以啟動新部署。
 ```

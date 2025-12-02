@@ -167,4 +167,27 @@ document.addEventListener('DOMContentLoaded', () => {
       bar.style.setProperty('--percent', `${level}%`);
     });
   }
+
+  // Back-to-top button behavior
+  const backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    const toggle = () => {
+      if (window.scrollY > 320) backToTop.classList.add('show');
+      else backToTop.classList.remove('show');
+    };
+    window.addEventListener('scroll', toggle, { passive: true });
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    // allow keyboard activation
+    backToTop.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+    // initial state
+    toggle();
+  }
 });

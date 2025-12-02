@@ -151,6 +151,14 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSocialIcons();
   if (themeToggle) themeToggle.addEventListener('click', updateSocialIcons);
 
+  // fallback for project images: 若外部圖片載入失敗，改用穩定的占位圖
+  document.querySelectorAll('.projects-grid img').forEach((img, idx) => {
+    img.addEventListener('error', () => {
+      img.src = `https://picsum.photos/seed/fallback${idx + 1}/800/500`;
+      img.alt = img.alt || '專案圖片';
+    });
+  });
+
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');

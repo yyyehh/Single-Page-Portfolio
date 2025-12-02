@@ -198,15 +198,6 @@ section h3{margin:0 0 1rem 0;font-size:1.3rem}
 a{color:inherit}
 button{cursor:pointer}
 
-/* Back to top button */
-.back-to-top{position:fixed;right:1rem;bottom:1rem;width:46px;height:46px;border-radius:999px;background:linear-gradient(90deg,var(--accent-2),var(--accent));color:#002;border:0;display:flex;align-items:center;justify-content:center;font-weight:800;box-shadow:0 8px 22px rgba(2,6,23,0.6);opacity:0;transform:translateY(12px);transition:opacity 280ms ease, transform 280ms ease, box-shadow 280ms ease;z-index:999}
-.back-to-top.show{opacity:1;transform:none}
-.back-to-top:focus{outline:3px solid rgba(255,255,255,0.12)}
-
-@media (prefers-reduced-motion: reduce){
-  .back-to-top{transition:none}
-}
-
 /* keyframes */
 @keyframes wiggle{0%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}100%{transform:rotate(-2deg)}}
 

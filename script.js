@@ -101,19 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Theme toggle
+  // Theme toggle with animated transition
   const themeToggle = document.querySelector('.theme-toggle');
-  themeToggle.addEventListener('click', () => {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    if(current === 'light'){
-      html.removeAttribute('data-theme');
-      themeToggle.textContent = '🌙';
-    } else {
-      html.setAttribute('data-theme','light');
-      themeToggle.textContent = '☀️';
-    }
-  });
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      // add a helper class to enable CSS transitions
+      html.classList.add('theme-transition');
+      const current = html.getAttribute('data-theme');
+      if (current === 'light') {
+        html.removeAttribute('data-theme');
+        themeToggle.textContent = '🌙';
+      } else {
+        html.setAttribute('data-theme', 'light');
+        themeToggle.textContent = '☀️';
+      }
+      // remove the helper class after the transition finishes
+      window.setTimeout(() => html.classList.remove('theme-transition'), 520);
+    });
+  }
 
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');

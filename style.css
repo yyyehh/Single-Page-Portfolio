@@ -33,12 +33,23 @@ html,body{height:100%}
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: linear-gradient(180deg, var(--bg) 0%, #051025 100%);
+  background-color: var(--bg);
   color:#dbeafe;
   -webkit-font-smoothing:antialiased;
   line-height:1.6;
 }
 
+
+/* Theme transition helper - add class to <html> to animate theme change */
+html.theme-transition body,
+html.theme-transition .site-header,
+html.theme-transition .project-card,
+html.theme-transition .profile-card,
+html.theme-transition .modal-inner,
+html.theme-transition .skill-tag,
+html.theme-transition .skill-bar{
+  transition: background-color 420ms ease, color 420ms ease, box-shadow 420ms ease, border-color 420ms ease, transform 420ms ease;
+}
 .container{
   width: calc(100% - 2rem);
   max-width: var(--max-width);

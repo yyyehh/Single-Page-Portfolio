@@ -137,6 +137,7 @@ section h3{margin:0 0 1rem 0;font-size:1.3rem}
 .project-card{background:var(--glass);border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.3);transition:transform 250ms ease, box-shadow 250ms ease}
 .project-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
 .project-card img{width:100%;height:auto;object-fit:cover;display:block;aspect-ratio:16/9;max-height:260px}
+.project-thumb{width:100%;height:auto;display:block;object-fit:cover;aspect-ratio:16/9}
 
 /* Ensure images remain visible on small screens */
 @media (max-width:640px){

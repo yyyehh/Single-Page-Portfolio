@@ -174,6 +174,23 @@ section h3{margin:0 0 1rem 0;font-size:1.3rem}
   .contact-form{grid-template-columns:1fr}
 }
 
+/* Additional adjustments for narrow phones (<=600px) */
+@media (max-width: 600px) {
+  .container{width:calc(100% - 1.25rem);padding:1rem 0}
+  .hero{padding:2rem 0;gap:1rem}
+  .hero-left h2{font-size:1.4rem}
+  .lead{font-size:0.95rem;max-width:100%}
+  .button{padding:0.7rem 1rem;font-size:0.95rem}
+  .profile-card{padding:0.75rem}
+  .project-card img{height:auto;max-height:none}
+  .project-info h4{font-size:1rem}
+  .skill-tag{padding:0.5rem 0.85rem;font-size:0.95rem}
+  .timeline-content{padding:0.65rem}
+  .site-header .header-inner{padding:0.4rem 0}
+  .nav.show{right:0.6rem;left:0.6rem}
+  .back-to-top{right:0.6rem;bottom:0.8rem;width:44px;height:44px}
+}
+
 /* Utility */
 .container > h2{margin-top:0}
 

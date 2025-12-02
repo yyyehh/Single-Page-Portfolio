@@ -121,6 +121,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Update social icon colors (Threads icon uses colorized PNG from CDN)
+  function updateSocialIcons() {
+    const html = document.documentElement;
+    const isLight = html.getAttribute('data-theme') === 'light';
+    const color = isLight ? '000000' : 'ffffff';
+    const map = {
+      'Instagram': 'instagram',
+      'Threads': 'threads',
+      'GitHub': 'github'
+    };
+    Object.keys(map).forEach(label => {
+      const a = document.querySelector(`.social-links a[aria-label="${label}"]`);
+      if (!a) return;
+      const img = a.querySelector('img');
+      if (!img) {
+        // create img if not present
+        const i = document.createElement('img');
+        i.className = 'social-img';
+        i.width = 20; i.height = 20; i.alt = label;
+        a.appendChild(i);
+      }
+      const targetImg = a.querySelector('img');
+      targetImg.src = `https://cdn.simpleicons.org/${map[label]}/${color}`;
+    });
+  }
+
+  // Run on load and after theme toggle
+  updateSocialIcons();
+  if (themeToggle) themeToggle.addEventListener('click', updateSocialIcons);
+
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');

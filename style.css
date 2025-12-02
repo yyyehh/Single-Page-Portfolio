@@ -104,6 +104,12 @@ html.theme-transition .skill-bar{
 .profile-card dt{font-size:0.75rem;color:var(--muted)}
 .profile-card dd{margin:0 0 0.45rem 0;font-weight:600}
 
+.social-links{display:flex;gap:0.5rem;align-items:center}
+.social-links a{color:var(--muted);display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:0.25rem;transition:color 200ms ease, background 200ms ease}
+.social-links a:hover{color:var(--accent);background:rgba(255,255,255,0.02)}
+.social-links svg{width:20px;height:20px;display:block}
+.social-links img.social-img{width:20px;height:20px;display:block}
+
 /* Sections */
 section h3{margin:0 0 1rem 0;font-size:1.3rem}
 .reveal{opacity:0;transform:translateY(12px);transition:opacity 600ms ease, transform 600ms ease}
